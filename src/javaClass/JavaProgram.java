@@ -15,6 +15,9 @@ public class JavaProgram {
 		System.out.println("Please Enter your Last Name");
 		String lastname = taskScanner.nextLine();
 		
+		System.out.println("Please Enter your Home Address");
+		String homeaddress = taskScanner.nextLine();
+		
 		System.out.println("Please Enter your Date of Birth");
 		String dateofbirth = taskScanner.nextLine();
 	
@@ -27,8 +30,8 @@ public class JavaProgram {
 		System.out.println("Are you Superman");
 		boolean superman = taskScanner.nextBoolean();
 		
-		System.out.println("Please Enter your Home Address");
-		String homeaddress = taskScanner.nextLine();
+		taskScanner.close();
+
 	
 	//Ask for users first and lastname
 		System.out.println("Your full name is: "+firstname + " " + lastname);
@@ -46,7 +49,8 @@ public class JavaProgram {
 		System.out.println("Are you superman:" +superman);	
 		
 	//Ask if he/she is superman
-		System.out.println("What is your home address:" +homeaddress);
-					
+		System.out.println("Your home address is :" +homeaddress);
+	
+	
 	}
 }
